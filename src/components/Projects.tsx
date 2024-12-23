@@ -22,7 +22,7 @@ export type Layout366Props = React.ComponentPropsWithoutRef<"section"> &
   Partial<Props>;
 
 export const Projects = (props: Layout366Props) => {
-  const { description, cardsSmall, cardsBig } = {
+  const { description, cardsBig } = {
     ...Layout366Defaults,
     ...props,
   } as Props;
