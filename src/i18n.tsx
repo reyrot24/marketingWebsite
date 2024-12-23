@@ -114,6 +114,7 @@ i18next
           contact: {
             title: "Let's Talk About",
             goldText: "Your Project",
+            alert: "I'll contact you very soon!",
             subtitle:
               "Do you have an idea or a project to develop? I’m here to help you turn it into reality. Compile the form to contact me, compile one of the google forms or click on the Book Now button.",
             form: {
@@ -159,7 +160,7 @@ i18next
             goldText: "Rey",
             description: {
               first:
-                "Ciao! Sono Andrew, aka Rey, un web e social media manager di 23 anni con una passione per la tecnologia 💻, la scienza 🔬, la musica 🎸, le arti marziali 🥋 e lo sport 🏋🏻‍♂️. Da tutte queste passioni, ho imparato a padroneggiare le cose fondamentali e a superare i miei limiti.",
+                "Ciao! Sono Andrea, aka Rey, un web e social media manager di 23 anni con una passione per la tecnologia 💻, la scienza 🔬, la musica 🎸, le arti marziali 🥋 e lo sport 🏋🏻‍♂️. Da tutte queste passioni, ho imparato a padroneggiare le cose fondamentali e a superare i miei limiti.",
               second:
                 "Metto la stessa energia e dedizione al servizio del mio lavoro digitale, aiutando marchi e professionisti a creare una presenza online di impatto.",
               third:
@@ -245,6 +246,7 @@ i18next
           contact: {
             title: "Parliamo del",
             goldText: "Tuo Progetto",
+            alert: "Ti contatterò presto.",
             subtitle:
               "hai un'idea o un progetto da sviluppare? Sono qui per aiutarti a trasformarlo in realtà. Compila il modulo per contattarmi, compila uno dei moduli di Google o clicca sul pulsante Prenota.",
             form: {

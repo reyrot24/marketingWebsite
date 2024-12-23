@@ -41,7 +41,7 @@ export const Contact = () => {
         .then(() => {
           reset();
           setLoading(false);
-          alert("I'll contact you very soon!");
+          alert(t("contact.alert"));
         });
     } else {
       setLoading(false);
@@ -50,7 +50,10 @@ export const Contact = () => {
   };
 
   return (
-    <section id="contact" className="bg-black1 px-[5%] py-16 md:py-24 lg:py-28">
+    <section
+      id="contact"
+      className=" px-[5%] py-16 md:py-24 lg:py-28 bg-darkerBrown"
+    >
       <div className="container max-w-lg">
         <div className="mx-auto mb-8 w-full max-w-lg text-center md:mb-10 lg:mb-12">
           <h2 className="text-softerBrown rb-5 mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
@@ -139,7 +142,7 @@ export const Contact = () => {
             ) : (
               <div>
                 <a
-                  href="https://forms.gle/R1eQhgW7e993ZvGk8"
+                  href="https://forms.gle/7gJ5RyQCmVyhrZxA7"
                   className="text-softerBrown hover:text-softBrown"
                   target="_blank" // Opens in a new tab
                   rel="noopener noreferrer" // Security best practice
