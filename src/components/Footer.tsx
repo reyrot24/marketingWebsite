@@ -148,7 +148,7 @@ export const Footer = (props: Footer4Props) => {
 export const Footer4Defaults: Footer4Props = {
   logo: {
     url: "#",
-    src: "/Logo.png",
+    src: "Logo.png",
     alt: "Logo image",
   },
   columnLinks: [
@@ -157,19 +157,19 @@ export const Footer4Defaults: Footer4Props = {
         { title: "Home", url: "#home" },
         {
           title: (
-            <Translation>{(t) => <h1>{t("footer.aboutme")}</h1>}</Translation>
+            <Translation>{(t) => <p>{t("footer.aboutme")}</p>}</Translation>
           ),
           url: "#aboutme",
         },
         {
           title: (
-            <Translation>{(t) => <h1>{t("footer.services")}</h1>}</Translation>
+            <Translation>{(t) => <p>{t("footer.services")}</p>}</Translation>
           ),
           url: "#services",
         },
         {
           title: (
-            <Translation>{(t) => <h1>{t("footer.projects")}</h1>}</Translation>
+            <Translation>{(t) => <p>{t("footer.projects")}</p>}</Translation>
           ),
           url: "#projects",
         },

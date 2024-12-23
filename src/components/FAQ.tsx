@@ -34,7 +34,7 @@ export const FAQ = (props: Faq3Props) => {
           <h2 className="text-softerBrown rb-5 mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
             {heading}
           </h2>
-          <p className="md:text-md">{description}</p>
+          {description}
           <div className="mt-6 md:mt-8">
             <a href="#contact">
               <Button>{t("faqs.button")}</Button>
@@ -61,7 +61,9 @@ export const FAQ = (props: Faq3Props) => {
 export const Faq3Defaults: Faq3Props = {
   heading: "FAQs",
   description: (
-    <Translation>{(t) => <h1>{t("faqs.subtitle")}</h1>}</Translation>
+    <Translation>
+      {(t) => <p className="md:text-md">{t("faqs.subtitle")}</p>}
+    </Translation>
   ),
   questions: [
     {

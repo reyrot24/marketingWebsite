@@ -42,9 +42,9 @@ export const ChiSono = (props: Header1Props) => {
               </span>
             </h1>
             <div className="flex gap-2 flex-col">
-              <p className="md:text-md">{description1}</p>
-              <p className="md:text-md">{description2}</p>
-              <p className="md:text-md">{description3}</p>
+              {description1}
+              {description2}
+              {description3}
             </div>
             <div className="mt-6 flex gap-x-4 md:mt-8">
               <a
@@ -84,17 +84,17 @@ export const ChiSono = (props: Header1Props) => {
 export const Header1Defaults: Header1Props = {
   description1: (
     <Translation>
-      {(t) => <h1>{t("aboutme.description.first")}</h1>}
+      {(t) => <p className="md:text-md">{t("aboutme.description.first")}</p>}
     </Translation>
   ),
   description2: (
     <Translation>
-      {(t) => <h1>{t("aboutme.description.second")}</h1>}
+      {(t) => <p className="md:text-md">{t("aboutme.description.second")}</p>}
     </Translation>
   ),
   description3: (
     <Translation>
-      {(t) => <h1>{t("aboutme.description.third")}</h1>}
+      {(t) => <p className="md:text-md">{t("aboutme.description.third")}</p>}
     </Translation>
   ),
   features: [

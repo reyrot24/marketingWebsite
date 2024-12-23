@@ -33,10 +33,8 @@ export const Header = (props: Header83Props) => {
         >
           <div className="px-[5%] py-16 md:py-24 lg:py-28">
             <div className="mx-auto max-w-lg text-center">
-              <h1 className="mb-5 text-6xl font-bold gold-text md:mb-6 md:text-9xl lg:text-10xl">
-                {heading}
-              </h1>
-              <p className="text-text-alternative md:text-md">{description}</p>
+              {heading}
+              {description}
               <div className="mt-6 flex items-center justify-center gap-x-4 md:mt-8">
                 <a
                   href="https://calendly.com/reyrotaru1/webbyreybook"
@@ -62,11 +60,11 @@ export const Header = (props: Header83Props) => {
             className="grid size-full auto-cols-fr grid-cols-1  md:grid-cols-3"
           >
             <img
-              src="/Gold.png"
+              src="Gold.png"
               className="absolute inset-0 size-full object-cover"
             />
             <img
-              src="/Gold.png"
+              src="Gold.png"
               className="absolute inset-0 size-full object-cover"
             />
           </motion.div>
@@ -77,8 +75,22 @@ export const Header = (props: Header83Props) => {
 };
 
 export const Header83Defaults: Header83Props = {
-  heading: <Translation>{(t) => <h1>{t("header.title")}</h1>}</Translation>,
+  heading: (
+    <Translation>
+      {(t) => (
+        <h1 className="mb-5 text-6xl font-bold gold-text md:mb-6 md:text-9xl lg:text-10xl">
+          {t("header.title")}
+        </h1>
+      )}
+    </Translation>
+  ),
   description: (
-    <Translation>{(t) => <h1>{t("header.subtitle")}</h1>}</Translation>
+    <Translation>
+      {(t) => (
+        <p className="text-text-alternative md:text-md">
+          {t("header.subtitle")}
+        </p>
+      )}
+    </Translation>
   ),
 };

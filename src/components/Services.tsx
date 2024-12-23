@@ -41,17 +41,16 @@ export const Services = (props: Layout499Props) => {
               {t("services.goldText")}
             </span>
           </h1>
-          <p className="md:text-md">{description}</p>
+          {description}
         </div>
         <div className="grid grid-cols-1 items-center gap-y-12 md:gap-x-12 lg:gap-x-20">
           {tabs.map((tab, index) =>
             index % 2 === 0 ? (
               <div key={index} className="grid md:grid-cols-2">
                 <div className="text-left flex justify-center flex-col">
-                  <h3 className="text-yellow mb-3 text-2xl font-bold md:mb-4 md:text-3xl md:leading-[1.3] lg:text-4xl">
-                    {tab.heading}
-                  </h3>
-                  <p>{tab.description}</p>
+                  {tab.heading}
+
+                  {tab.description}
                 </div>
                 <div className="flex justify-center items-center">
                   <img src={tab.image?.src} alt={tab.image?.alt} width="250" />
@@ -66,10 +65,8 @@ export const Services = (props: Layout499Props) => {
                   <img src={tab.image?.src} alt={tab.image?.alt} width="250" />
                 </div>
                 <div className="flex justify-center flex-col">
-                  <h3 className="text-yellow mb-3 text-2xl font-bold md:mb-4 md:text-3xl md:leading-[1.3] lg:text-4xl">
-                    {tab.heading}
-                  </h3>
-                  <p>{tab.description}</p>
+                  {tab.heading}
+                  {tab.description}
                 </div>
               </div>
             )
@@ -82,60 +79,78 @@ export const Services = (props: Layout499Props) => {
 
 export const Layout499Defaults: Layout499Props = {
   description: (
-    <Translation>{(t) => <h1>{t("services.subtitle")}</h1>}</Translation>
+    <Translation>
+      {(t) => <p className="md:text-md">{t("services.subtitle")}</p>}
+    </Translation>
   ),
   tabs: [
     {
       heading: (
         <Translation>
-          {(t) => <h1>{t("services.sections.section1.title")}</h1>}
+          {(t) => (
+            <h3 className="text-yellow mb-3 text-2xl font-bold md:mb-4 md:text-3xl md:leading-[1.3] lg:text-4xl">
+              {t("services.sections.section1.title")}
+            </h3>
+          )}
         </Translation>
       ),
       description: (
         <Translation>
-          {(t) => <h1>{t("services.sections.section1.description")}</h1>}
+          {(t) => <p>{t("services.sections.section1.description")}</p>}
         </Translation>
       ),
-      image: { src: "/Gif1.gif", alt: "website" },
+      image: { src: "Gif1.gif", alt: "website" },
     },
     {
       heading: (
         <Translation>
-          {(t) => <h1>{t("services.sections.section2.title")}</h1>}
+          {(t) => (
+            <h3 className="text-yellow mb-3 text-2xl font-bold md:mb-4 md:text-3xl md:leading-[1.3] lg:text-4xl">
+              {t("services.sections.section2.title")}
+            </h3>
+          )}
         </Translation>
       ),
       description: (
         <Translation>
-          {(t) => <h1>{t("services.sections.section2.description")}</h1>}
+          {(t) => <p>{t("services.sections.section2.description")}</p>}
         </Translation>
       ),
-      image: { src: "/Gif2.gif", alt: "social media" },
+      image: { src: "Gif2.gif", alt: "social media" },
     },
     {
       heading: (
         <Translation>
-          {(t) => <h1>{t("services.sections.section3.title")}</h1>}
+          {(t) => (
+            <h3 className="text-yellow mb-3 text-2xl font-bold md:mb-4 md:text-3xl md:leading-[1.3] lg:text-4xl">
+              {t("services.sections.section3.title")}
+            </h3>
+          )}
         </Translation>
       ),
       description: (
         <Translation>
-          {(t) => <h1>{t("services.sections.section3.description")}</h1>}
+          {(t) => <p>{t("services.sections.section3.description")}</p>}
         </Translation>
       ),
-      image: { src: "/Gif3.gif", alt: "marketing" },
+      image: { src: "Gif3.gif", alt: "marketing" },
     },
     {
       heading: (
         <Translation>
-          {(t) => <h1>{t("services.sections.section4.title")}</h1>}
+          {(t) => (
+            <h3 className="text-yellow mb-3 text-2xl font-bold md:mb-4 md:text-3xl md:leading-[1.3] lg:text-4xl">
+              {t("services.sections.section4.title")}
+            </h3>
+          )}
         </Translation>
       ),
       description: (
         <Translation>
-          {(t) => <h1>{t("services.sections.section4.description")}</h1>}
+          {(t) => <p>{t("services.sections.section4.description")}</p>}
         </Translation>
       ),
-      image: { src: "/Gif4.gif", alt: "ai" },
+      image: { src: "Gif4.gif", alt: "ai" },
     },
   ],
 };

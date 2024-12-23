@@ -40,7 +40,7 @@ export const Projects = (props: Layout366Props) => {
               {t("projects.goldText")}
             </span>
           </h1>
-          <p className="md:text-md">{description}</p>
+          {description}
         </div>
         <div className="grid grid-cols-1 gap-6 md:gap-8 ">
           <div className="grid grid-cols-1 gap-6 md:gap-8 lg:grid-cols-2">
@@ -58,10 +58,9 @@ export const Projects = (props: Layout366Props) => {
                 </div>
                 <div className="flex flex-col justify-between items-center p-6 md:p-12">
                   <div>
-                    <h3 className="text-yellow mb-5 text-3xl font-bold leading-[1.2] md:mb-6 md:text-4xl lg:text-5xl">
-                      {card.heading}
-                    </h3>
-                    <p>{card.description}</p>
+                    {card.heading}
+
+                    {card.description}
                     <a href="">{card.link}</a>
                   </div>
                 </div>
@@ -76,40 +75,50 @@ export const Projects = (props: Layout366Props) => {
 
 export const Layout366Defaults: Layout366Props = {
   description: (
-    <Translation>{(t) => <h1>{t("projects.subtitle")}</h1>}</Translation>
+    <Translation>
+      {(t) => <p className="md:text-md">{t("projects.subtitle")}</p>}
+    </Translation>
   ),
   cardsBig: [
     {
       image: {
-        src: "/Athena_Gym.png",
+        src: "Athena_Gym.png",
         alt: "Athena Gym",
       },
       heading: (
         <Translation>
-          {(t) => <h1>{t("projects.projects.project1.title")}</h1>}
+          {(t) => (
+            <h3 className="text-yellow mb-5 text-3xl font-bold leading-[1.2] md:mb-6 md:text-4xl lg:text-5xl">
+              {t("projects.projects.project1.title")}
+            </h3>
+          )}
         </Translation>
       ),
       link: "",
       description: (
         <Translation>
-          {(t) => <h1>{t("projects.projects.project1.description")}</h1>}
+          {(t) => <p>{t("projects.projects.project1.description")}</p>}
         </Translation>
       ),
     },
     {
       image: {
-        src: "/Mobility_express.png",
+        src: "Mobility_express.png",
         alt: "Mobility Express",
       },
       heading: (
         <Translation>
-          {(t) => <h1>{t("projects.projects.project2.title")}</h1>}
+          {(t) => (
+            <h3 className="text-yellow mb-5 text-3xl font-bold leading-[1.2] md:mb-6 md:text-4xl lg:text-5xl">
+              {t("projects.projects.project2.title")}
+            </h3>
+          )}
         </Translation>
       ),
       link: "",
       description: (
         <Translation>
-          {(t) => <h1>{t("projects.projects.project2.description")}</h1>}
+          {(t) => <p>{t("projects.projects.project2.description")}</p>}
         </Translation>
       ),
     },

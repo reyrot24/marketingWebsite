@@ -139,7 +139,7 @@ export const Navbar = (props: Navbar14Props) => {
 export const Navbar14Defaults: Navbar14Props = {
   logo: {
     url: "#",
-    src: "/Logo.png",
+    src: "Logo.png",
     alt: "Logo image",
   },
   navLinks: [
