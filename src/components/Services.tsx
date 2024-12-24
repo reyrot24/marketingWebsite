@@ -1,3 +1,4 @@
+import { images } from "@/constants/images";
 import { Translation, useTranslation } from "react-i18next";
 
 type ImageProps = {
@@ -77,7 +78,7 @@ export const Services = (props: Layout499Props) => {
   );
 };
 
-export const Layout499Defaults: Layout499Props = {
+const Layout499Defaults: Layout499Props = {
   description: (
     <Translation>
       {(t) => <p className="md:text-md">{t("services.subtitle")}</p>}
@@ -99,7 +100,7 @@ export const Layout499Defaults: Layout499Props = {
           {(t) => <p>{t("services.sections.section1.description")}</p>}
         </Translation>
       ),
-      image: { src: "Gif1.gif", alt: "website" },
+      image: { src: images.gif1.src, alt: images.gif1.alt },
     },
     {
       heading: (
@@ -116,7 +117,7 @@ export const Layout499Defaults: Layout499Props = {
           {(t) => <p>{t("services.sections.section2.description")}</p>}
         </Translation>
       ),
-      image: { src: "Gif2.gif", alt: "social media" },
+      image: { src: images.gif2.src, alt: images.gif2.alt },
     },
     {
       heading: (
@@ -133,7 +134,7 @@ export const Layout499Defaults: Layout499Props = {
           {(t) => <p>{t("services.sections.section3.description")}</p>}
         </Translation>
       ),
-      image: { src: "Gif3.gif", alt: "marketing" },
+      image: { src: images.gif3.src, alt: images.gif3.alt },
     },
     {
       heading: (
@@ -150,7 +151,7 @@ export const Layout499Defaults: Layout499Props = {
           {(t) => <p>{t("services.sections.section4.description")}</p>}
         </Translation>
       ),
-      image: { src: "Gif4.gif", alt: "ai" },
+      image: { src: images.gif4.src, alt: images.gif4.alt },
     },
   ],
 };

@@ -1,3 +1,4 @@
+import { images } from "@/constants/images";
 import { Translation, useTranslation } from "react-i18next";
 
 type ImageProps = {
@@ -82,8 +83,8 @@ export const Layout366Defaults: Layout366Props = {
   cardsBig: [
     {
       image: {
-        src: "Athena_Gym.png",
-        alt: "Athena Gym",
+        src: images.athenaGym.src,
+        alt: images.athenaGym.alt,
       },
       heading: (
         <Translation>
@@ -103,8 +104,8 @@ export const Layout366Defaults: Layout366Props = {
     },
     {
       image: {
-        src: "Mobility_express.png",
-        alt: "Mobility Express",
+        src: images.mobilityExpress.src,
+        alt: images.mobilityExpress.alt,
       },
       heading: (
         <Translation>

@@ -2,6 +2,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { BiLogoInstagram, BiLogoLinkedinSquare } from "react-icons/bi";
 import { useEffect } from "react";
 import { Translation } from "react-i18next";
+import { images } from "@/constants/images";
 
 type ImageProps = {
   url?: string;
@@ -148,8 +149,8 @@ export const Footer = (props: Footer4Props) => {
 export const Footer4Defaults: Footer4Props = {
   logo: {
     url: "#",
-    src: "Logo.png",
-    alt: "Logo image",
+    src: images.logo.src,
+    alt: images.logo.alt,
   },
   columnLinks: [
     {

@@ -1,6 +1,7 @@
 import clsx from "clsx";
 import { Button } from "./ui/button";
 import { Translation, useTranslation } from "react-i18next";
+import { images } from "@/constants/images";
 
 type Image = {
   src: string;
@@ -100,20 +101,20 @@ export const Header1Defaults: Header1Props = {
   features: [
     {
       image: {
-        src: "IMG_20210623_231200_476.JPG",
-        alt: "Relume placeholder image 2",
+        src: images.rey1.src,
+        alt: images.rey1.alt,
       },
     },
     {
       image: {
-        src: "IMG-20210810-WA0015.JPG",
-        alt: "Relume placeholder image 3",
+        src: images.rey2.src,
+        alt: images.rey2.alt,
       },
     },
     {
       image: {
-        src: "IMG-20220403-WA0023.JPG",
-        alt: "Relume placeholder image 3",
+        src: images.rey3.src,
+        alt: images.rey3.alt,
       },
     },
   ],

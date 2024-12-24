@@ -3,6 +3,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Button } from "./ui/button";
 import { Translation, useTranslation } from "react-i18next";
+import { images } from "@/constants/images";
 
 type Props = {
   heading: any;
@@ -60,11 +61,13 @@ export const Header = (props: Header83Props) => {
             className="grid size-full auto-cols-fr grid-cols-1  md:grid-cols-3"
           >
             <img
-              src="Gold.png"
+              src={images.gold.src}
+              alt={images.gold.alt}
               className="absolute inset-0 size-full object-cover"
             />
             <img
-              src="Gold.png"
+              src={images.gold.src}
+              alt={images.gold.alt}
               className="absolute inset-0 size-full object-cover"
             />
           </motion.div>

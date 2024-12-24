@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { Button } from "./ui/button";
 import LanguageSelector from "./LanguageSelector";
 import { Translation, useTranslation } from "react-i18next";
+import { images } from "@/constants/images";
 
 type ImageProps = {
   url?: string;
@@ -27,7 +28,7 @@ export type Navbar14Props = React.ComponentPropsWithoutRef<"section"> &
   Partial<Props>;
 
 export const Navbar = (props: Navbar14Props) => {
-  const { logo, navLinks } = {
+  const { navLinks } = {
     ...Navbar14Defaults,
     ...props,
   } as Props;
@@ -57,10 +58,14 @@ export const Navbar = (props: Navbar14Props) => {
   }, []);
 
   return (
-    <nav className="backdrop-filter backdrop-blur-3xl opacity-95 bg-black fixed inset-0 bottom-auto z-[1000] mx-auto mt-5 flex w-full text-white px-[5%] md:mt-6 lg:mx-[5%] lg:w-auto lg:px-0">
-      <div className="mx-auto flex min-h-16 w-full max-w-xxl items-center justify-between gap-x-4 gap-y-4 gold-line px-5 md:min-h-18 md:px-8">
-        <a href={logo.url}>
-          <img src={logo.src} alt={logo.alt} className="w-14 my-2" />
+    <nav className="backdrop-filter backdrop-blur-3xl opacity-95 bg-black gold-line fixed inset-0 bottom-auto z-[1000] mx-auto md:mt-5 flex w-full text-white px-[5%] lg:mx-[5%] lg:w-auto lg:px-0">
+      <div className="mx-auto flex min-h-16 w-full max-w-xxl items-center justify-between gap-x-4 gap-y-4 px-5 md:min-h-18 md:px-8">
+        <a href="#">
+          <img
+            src={images.logo.src}
+            alt={images.logo.alt}
+            className="w-14 my-2"
+          />
         </a>
         <button
           ref={buttonRef}
@@ -137,11 +142,6 @@ export const Navbar = (props: Navbar14Props) => {
 };
 
 export const Navbar14Defaults: Navbar14Props = {
-  logo: {
-    url: "#",
-    src: "Logo.png",
-    alt: "Logo image",
-  },
   navLinks: [
     { title: "Home", url: "#home" },
     {
