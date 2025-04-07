@@ -9,6 +9,7 @@ import Rey2 from "../assets/Rey_Image2.png";
 import Rey3 from "../assets/Rey_Image3.png";
 import Logo from "../assets/Logo.png";
 import MobiliTyExpress from "../assets/Mobility_express.png";
+import WhatsApp from "../assets/whatsapp.png";
 
 export const images = {
   athenaGym: {
@@ -54,5 +55,9 @@ export const images = {
   mobilityExpress: {
     src: MobiliTyExpress,
     alt: "MobiliTyExpress",
+  },
+  whatsapp: {
+    src: WhatsApp,
+    alt: "Chat on WhatsApp ",
   },
 };

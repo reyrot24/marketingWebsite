@@ -48,13 +48,7 @@ export const ChiSono = (props: Header1Props) => {
               {description3}
             </div>
             <div className="mt-6 flex gap-x-4 md:mt-8">
-              <a
-                href="https://calendly.com/reyrotaru1/webbyreybook"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button>{t("aboutme.button")}</Button>
-              </a>
+              <Button>{t("aboutme.button")}</Button>
             </div>
           </div>
           <div className="md:flex md:flex-row gap-x-12  md:gap-x-8  lg:gap-x-12 hidden">

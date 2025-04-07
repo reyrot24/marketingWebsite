@@ -13,15 +13,15 @@ i18next
             services: "Services",
             projects: "Projects",
             testimonials: "Testimonials",
-            button: "Book now",
+            pricing: "Pricing",
+            button: "Contact me",
           },
           header: {
             title:
               "Building Websites and Social Campaigns That Make a Difference.",
             subtitle:
               "I specialize in crafting websites and social media strategies that not only look good but drive results. Let's take your brand to the next level.",
-            button1: "Book now",
-            button2: "Contact",
+            button1: "Contact",
           },
           aboutme: {
             title: "Meet",
@@ -34,11 +34,12 @@ i18next
               third:
                 "I specialize in building engaging websites, managing effective social media strategies, and creating compelling content. Whether you're looking to revamp your online identity, increase engagement, or grow your brand, I’m here to turn your ideas into reality with a clear focus on results.",
             },
-            button: "Book now",
+            button: "Contact me",
           },
           services: {
             title: "Tailored Services for Your Digital",
             goldText: "Growth",
+            optional: "Optional",
             subtitle:
               "Every project is unique. Here’s how I can help you grow online:",
             sections: {
@@ -62,6 +63,135 @@ i18next
                 description:
                   "I offer AI integration services to help automate repetitive tasks and improve efficiency across your digital channels. From chatbots for customer support to content generation tools, I integrate AI-powered solutions that streamline workflows and enhance user experience.",
               },
+            },
+          },
+          pricing: {
+            title: "Discover My",
+            goldText: "Pricing",
+            subtitle:
+              "Choose the perfect plan for your business needs. Whether you need a stunning website, social media, or full-scale digital marketing, I've got you covered!",
+            packages: {
+              package1: {
+                title: "Essential Package",
+                price: "€149/mo",
+                features: {
+                  website: {
+                    title: "Website Development",
+                    feature1:
+                      "1-Page Landing Website (Custom Design & Mobile-Optimized)",
+                    feature2: "SEO Setup",
+                    feature3: "Contact Form & Basic Analytics",
+                  },
+                  marketing: {
+                    title: "Marketing",
+                    feature1: "Basic Google My Business Setup",
+                    feature2: "Basic Monthly Performance Report",
+                  },
+                },
+                bonus: {
+                  title: "Bonus:",
+                  feature: "Newsletter Setup (Up to 500 subscribers)",
+                },
+                forWho:
+                  "Great for freelancers, small businesses, and startups looking to establish their online presence!",
+                cta: "Get Started",
+              },
+              package2: {
+                title: "Growth Package",
+                price: "€249/mo",
+                features: {
+                  website: {
+                    title: "Website Development",
+                    feature1: "5-Page Website (Custom Design & SEO-Optimized)",
+                    feature2: "Blog & Content Management System",
+                  },
+                  marketing: {
+                    title: "Marketing",
+                    feature1: "Google My Business Optimization",
+                    feature2: "Google & Facebook Ads Management",
+                    feature3: "Monthly Performance Report",
+                  },
+                  ai: {
+                    title: "AI Automations",
+                    feature1: "Basic AI Automations for Social Media & Emails",
+                  },
+                },
+                bonus: {
+                  title: "Bonus:",
+                  feature: "Newsletter Automation (Up to 1000 subscribers)",
+                },
+                forWho:
+                  "Perfect for businesses ready to scale and increase their reach!",
+                cta: "Upgrade Now",
+              },
+              package3: {
+                title: "Ultimate Package",
+                price: "€499/mo",
+                features: {
+                  website: {
+                    title: "Website Development",
+                    feature1: "Custom Full-Stack Solution",
+                    feature2:
+                      "Advanced Website with Backend (E-Commerce, Booking, or Membership)",
+                    feature3: "CRM & Database Integration",
+                  },
+                  marketing: {
+                    title: "Marketing",
+                    feature1:
+                      "Advanced Analytics & Monthly Strategy Consultation",
+                    feature2: "Conversion Rate Optimization for Maximum Sales",
+                  },
+                  ai: {
+                    title: "AI Automations",
+                    feature1: "AI-Powered Marketing Automations",
+                    feature2: "Data-Driven Performance Reports & Consultations",
+                    feature3: "24/7 Website Monitoring & Support",
+                  },
+                },
+                bonus: {
+                  title: "Bonus:",
+                  feature:
+                    "VIP Priority Support + Unlimited Newsletter Automation",
+                },
+                forWho:
+                  "The ultimate package for businesses looking to automate and dominate their industry!",
+                cta: "Get the Ultimate Package",
+              },
+            },
+            custom: {
+              title: "Custom Services",
+              subtitle: "Need something unique? I also offer:",
+              feature1: "Email Marketing & Automation",
+              feature2: "Branding & Graphic design",
+              feature3: "CRM Setup & Workflow Automation",
+            },
+            addOn: {
+              title: "Website Development (One-Time Fee)",
+              price: "Starting at €99",
+              options: {
+                option1: {
+                  title: "Landing Page Website (1 Page)",
+                  subtitle: "Perfect for personal brands & small businesses",
+                  price: "€99",
+                },
+                option2: {
+                  title: "Multi-Page Website (Up to 5 Pages)*",
+                  subtitle: "Ideal for businesses & service providers",
+                  price: "€199",
+                },
+                option3: {
+                  title:
+                    "Full-Stack Website (E-Commerce, Booking, or Membership System)",
+                  subtitle: "Advanced custom development",
+                  price: "€499",
+                },
+              },
+              cta: "Get Your Website",
+              asteric: "+ €50 for any additional page",
+            },
+            footer: {
+              title: "Not sure what you need?",
+              subtitle: "Schedule a Free Consultation!",
             },
           },
           projects: {
@@ -99,11 +229,6 @@ i18next
                   "Absolutely! My goal is to create websites that are not only user-friendly for visitors but also manageable for you. I use Sanity as content managing platform, so that it's easy for you to update content, images, and basic settings on your own. At the end of the project, I provide training and resources to ensure you feel confident in making updates, while also offering ongoing support if needed.",
               },
               faq3: {
-                title: "How does social media management work?",
-                description:
-                  "Social media management involves planning, creating, scheduling, and analyzing content to build an engaging online presence. After an initial strategy session, I craft a content calendar tailored to your audience, keeping a consistent posting schedule. I also monitor engagement and analytics to refine the strategy as needed, ensuring your social media channels connect meaningfully with your target audience.",
-              },
-              faq4: {
                 title:
                   "What does AI integration mean, and how canit benefit my business?",
                 description:
@@ -116,7 +241,7 @@ i18next
             goldText: "Your Project",
             alert: "I'll contact you very soon!",
             subtitle:
-              "Do you have an idea or a project to develop? I’m here to help you turn it into reality. Compile the form to contact me, compile one of the google forms or click on the Book Now button.",
+              "Do you have an idea or a project to develop? I’m here to help you turn it into reality. Compile the form send me an email or click the button to talk on WhatsApp",
             form: {
               name: "Name",
               email: "Email",
@@ -125,16 +250,14 @@ i18next
               privacy: "I accept the",
               button: "Send message",
             },
-            googleforms: {
-              description: "Compile the Google Form to talk about the project:",
-            },
           },
           footer: {
             aboutme: "About me",
             services: "Services",
             projects: "Projects",
             testimonials: "Testimonials",
-            copyright: "© 2024 Vasile Andrei Rotaru. All rights reserved.",
+            pricing: "Pricing",
+            copyright: "© 2025 Vasile Andrei Rotaru. All rights reserved.",
           },
         },
       },
@@ -145,19 +268,19 @@ i18next
             services: "Servizi",
             projects: "Progetti",
             testimonials: "Testimonianze",
-            button: "Prenota",
+            pricing: "Prezzi",
+            button: "Contattami",
           },
           header: {
             title:
               "Costruire siti web e campagne social che fanno la differenza.",
             subtitle:
               "Sono specializzato nella creazione di siti web e strategie per i social media che non solo hanno un bell'aspetto, ma generano anche risultati. Portiamo il tuo marchio al livello successivo.",
-            button1: "Prenota",
-            button2: "Contattami",
+            button1: "Contattami",
           },
           aboutme: {
-            title: "Incontra",
-            goldText: "Rey",
+            title: "Chi",
+            goldText: "Sono",
             description: {
               first:
                 "Ciao! Sono Andrea, aka Rey, un web e social media manager di 23 anni con una passione per la tecnologia 💻, la scienza 🔬, la musica 🎸, le arti marziali 🥋 e lo sport 🏋🏻‍♂️. Da tutte queste passioni, ho imparato a padroneggiare le cose fondamentali e a superare i miei limiti.",
@@ -166,11 +289,12 @@ i18next
               third:
                 "Sono specializzato nella creazione di siti web accattivanti, nella gestione di strategie efficaci sui social media e nella creazione di contenuti avvincenti. Che tu stia cercando di rinnovare la tua identità online, aumentare l'engagement o far crescere il tuo marchio, sono qui per trasformare le tue idee in realtà con un chiaro focus sui risultati.",
             },
-            button: "Prenota",
+            button: "Contattami",
           },
           services: {
             title: "Servizi su Misura per la Tua Crescita",
             goldText: "Digitale",
+            optional: "Opzionale",
             subtitle:
               "Ogni progetto è unico. Ecco come posso aiutarti a crescere online:",
             sections: {
@@ -194,6 +318,140 @@ i18next
                 description:
                   "Offro servizi di integrazione con IA per aiutare ad automatizzare le attività ripetitive e migliorare l'efficienza sui tuoi canali digitali. Dai chatbot per l'assistenza clienti agli strumenti di generazione di contenuti, integro soluzioni basate sull'IA che semplificano i flussi di lavoro e migliorano l'esperienza utente.",
               },
+            },
+          },
+          pricing: {
+            title: "Scopri i Miei",
+            goldText: "Prezzi",
+            subtitle:
+              "Scegli il piano perfetto per le tue esigenze aziendali. Che tu abbia bisogno di un sito web straordinario, di social media o di marketing digitale, ci penso io! ",
+            packages: {
+              package1: {
+                title: "Pacchetto Essenziale",
+                price: "€149/mese",
+                features: {
+                  website: {
+                    title: "Sviluppo del sito web",
+                    feature1:
+                      "1-Pagina Landing (Design Personalizzato & Ottimizzato per Mobile)",
+                    feature2: "Configurazione SEO ",
+                    feature3: "Modulo di Contatto & Analytics di Base",
+                  },
+                  marketing: {
+                    title: "Marketing",
+                    feature1: "Configurazione di base di Google My Business",
+                    feature2: "Rapporto base sulle prestazioni mensili",
+                  },
+                },
+                bonus: {
+                  title: "Bonus:",
+                  feature: "Configurazione Newsletter (Fino a 500 iscritti)",
+                },
+                forWho:
+                  "Ideale per liberi professionisti, piccole imprese e startup che desiderano affermare la propria presenza online!",
+                cta: "Inizia adesso",
+              },
+              package2: {
+                title: "Pacchetto Crescita",
+                price: "€249/mese",
+                features: {
+                  website: {
+                    title: "Sviluppo del sito web",
+                    feature1:
+                      "Sito Web con 5 Pagine (Design Personalizzato & Ottimizzato per la SEO)",
+                    feature2: "Blog e Sistema di Gestione dei Contenuti",
+                  },
+                  marketing: {
+                    title: "Marketing",
+                    feature1: "Ottimizzazione di Google My Business",
+                    feature2: "Gestione di Google & Facebook Ads",
+                    feature3: "Rapporto sulle prestazioni mensili",
+                  },
+                  ai: {
+                    title: "Automazioni AI",
+                    feature1: "Automazioni di Base per Social Media & Email",
+                  },
+                },
+                bonus: {
+                  title: "Bonus:",
+                  feature: "Automazione Newsletter (Fino a 1000 iscritti)",
+                },
+                forWho:
+                  "Perfetto per le aziende pronte a crescere e ad aumentare la propria portata!",
+                cta: "Aggiorna ora",
+              },
+              package3: {
+                title: "Pacchetto Ultimate",
+                price: "€499/mese",
+                features: {
+                  website: {
+                    title: "Sviluppo del sito web",
+                    feature1: "Soluzione Full-Stack Personalizzata",
+                    feature2:
+                      "Sito Web Avanzato (E-Commerce, Prenotazione o Abbonamento)",
+                    feature3: "Integrazione con CRM & Database",
+                  },
+                  marketing: {
+                    title: "Marketing",
+                    feature1:
+                      "Analisi Avanzata e Consulenza Strategica Mensile",
+                    feature2:
+                      "Ottimizzazione del Tasso di Conversione per il Massimo delle Vendite",
+                  },
+                  ai: {
+                    title: "Automazioni AI",
+                    feature1:
+                      "Automazioni di Marketing Basate sull'Intelligenza Artificiale",
+                    feature2:
+                      "Report e Consulenze sulle Prestazioni basate sui Dati",
+                    feature3:
+                      "Monitoraggio e Supporto del Sito Web 24 ore su 24, 7 giorni su 7",
+                  },
+                },
+                bonus: {
+                  title: "Bonus:",
+                  feature:
+                    "Supporto Prioritario VIP + Automazione Illimitata delle Newsletter",
+                },
+                forWho:
+                  "Il pacchetto definitivo per le aziende che vogliono automatizzare e dominare il loro settore!",
+                cta: "Ottieni il pacchetto definitivo",
+              },
+            },
+            custom: {
+              title: "Servizi personalizzati",
+              subtitle: "Hai bisogno di qualcosa di unico? Offro anche:",
+              feature1: "Email marketing e automazione",
+              feature2: "Branding e grafica",
+              feature3: "Configurazione CRM e automazione del flusso di lavoro",
+            },
+            addOn: {
+              title: "Sviluppo Sito Web (Una tantum)",
+              price: "A partire da €99",
+              options: {
+                option1: {
+                  title: "Sito Web Landing (1 Pagina)",
+                  subtitle: "Perfetto per marchi personali e piccole imprese",
+                  price: "€99",
+                },
+                option2: {
+                  title: "Sito Web Multi-Pagine (Fino a 5 pagine)*",
+                  subtitle: "Ideale per aziende e fornitori di servizi",
+                  price: "€199",
+                },
+                option3: {
+                  title:
+                    "Sito Web Full-Stack (E-Commerce, Prenotazioni, o Sistema di Abbonamento)",
+                  subtitle: "Sviluppo personale avanzato",
+                  price: "€399",
+                },
+              },
+              cta: "Prendi il tuo Sito Web",
+              asteric: "+ €50 per pagine aggiuntive",
+            },
+            footer: {
+              title: "Non sei sicuro di quello che ti serve?",
+              subtitle: "Prenota un Consulto Gratuito!",
             },
           },
           projects: {
@@ -231,11 +489,6 @@ i18next
                   "Assolutamente! Il mio obiettivo è creare siti web che non siano solo facili da usare per i visitatori, ma anche gestibili per te. Utilizzo Sanity come piattaforma di gestione dei contenuti, in modo che tu possa aggiornare facilmente contenuti, immagini e impostazioni di base da solo. Alla fine del progetto, fornisco formazione e risorse per assicurarti di sentirti sicuro nell'effettuare gli aggiornamenti, offrendo anche supporto continuo se necessario.",
               },
               faq3: {
-                title: "Come funziona la gestione dei social media?",
-                description:
-                  "La gestione dei social media implica la pianificazione, la creazione, la programmazione e l'analisi dei contenuti per creare una presenza online coinvolgente. Dopo una sessione di strategia iniziale, creo un calendario dei contenuti su misura per il tuo pubblico, mantenendo un programma di pubblicazione coerente. Monitoro anche il coinvolgimento e l'analisi per perfezionare la strategia secondo necessità, assicurandomi che i tuoi canali social media si colleghino in modo significativo con il tuo pubblico di destinazione.",
-              },
-              faq4: {
                 title:
                   "Cosa significa integrazione con AI e come può essere utile alla mia attività?",
                 description:
@@ -248,7 +501,7 @@ i18next
             goldText: "Tuo Progetto",
             alert: "Ti contatterò presto.",
             subtitle:
-              "hai un'idea o un progetto da sviluppare? Sono qui per aiutarti a trasformarlo in realtà. Compila il modulo per contattarmi, compila uno dei moduli di Google o clicca sul pulsante Prenota.",
+              "Hai un'idea o un progetto da sviluppare? Sono qui per aiutarti a trasformarlo in realtà. Compila il modulo per inviarmi un'email o clicca il pulsante per parlare su WhatsApp",
             form: {
               name: "Nome",
               email: "Email",
@@ -257,17 +510,15 @@ i18next
               privacy: "Accetto la ",
               button: "Invia messaggio",
             },
-            googleforms: {
-              description: "Compila il Google Form per parlare del progetto:",
-            },
           },
           footer: {
             aboutme: "Chi sono",
             services: "Servizi",
             projects: "Progetti",
             testimonials: "Testimonianze",
+            pricing: "Prezzi",
             copyright:
-              "© 2024 Vasile Andrei Rotaru. Tutti i diritti sono riservati.",
+              "© 2025 Vasile Andrei Rotaru. Tutti i diritti sono riservati.",
           },
         },
       },

@@ -170,6 +170,12 @@ export const Footer4Defaults: Footer4Props = {
         },
         {
           title: (
+            <Translation>{(t) => <p>{t("footer.pricing")}</p>}</Translation>
+          ),
+          url: "#pricing",
+        },
+        {
+          title: (
             <Translation>{(t) => <p>{t("footer.projects")}</p>}</Translation>
           ),
           url: "#projects",

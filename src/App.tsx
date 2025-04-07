@@ -7,6 +7,7 @@ import { Header } from "./components/Header";
 import { Navbar } from "./components/Navbar";
 /* import { Testimonials } from "./components/Testimonials"; */
 import { Projects } from "./components/Projects";
+import { Pricing } from "./components/Pricing";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <Header />
       <ChiSono />
       <Services />
+      <Pricing />
       <Projects />
       <FAQ />
       {/* <Testimonials /> */}

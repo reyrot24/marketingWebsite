@@ -10,6 +10,7 @@ type TabProps = {
   heading: any;
   description: any;
   image?: ImageProps;
+  optional?: boolean;
 };
 
 type Props = {
@@ -50,7 +51,11 @@ export const Services = (props: Layout499Props) => {
               <div key={index} className="grid md:grid-cols-2">
                 <div className="text-left flex justify-center flex-col">
                   {tab.heading}
-
+                  {tab.optional && (
+                    <div className="mb-2 text-yellow w-fit rounded">
+                      <h1>{t("services.optional")}</h1>
+                    </div>
+                  )}
                   {tab.description}
                 </div>
                 <div className="flex justify-center items-center">
@@ -67,6 +72,11 @@ export const Services = (props: Layout499Props) => {
                 </div>
                 <div className="flex justify-center flex-col">
                   {tab.heading}
+                  {tab.optional && (
+                    <div className="mb-2 text-yellow w-fit rounded">
+                      <h1>{t("services.optional")}</h1>
+                    </div>
+                  )}
                   {tab.description}
                 </div>
               </div>
@@ -102,23 +112,7 @@ const Layout499Defaults: Layout499Props = {
       ),
       image: { src: images.gif1.src, alt: images.gif1.alt },
     },
-    {
-      heading: (
-        <Translation>
-          {(t) => (
-            <h3 className="text-yellow mb-3 text-2xl font-bold md:mb-4 md:text-3xl md:leading-[1.3] lg:text-4xl">
-              {t("services.sections.section2.title")}
-            </h3>
-          )}
-        </Translation>
-      ),
-      description: (
-        <Translation>
-          {(t) => <p>{t("services.sections.section2.description")}</p>}
-        </Translation>
-      ),
-      image: { src: images.gif2.src, alt: images.gif2.alt },
-    },
+
     {
       heading: (
         <Translation>
@@ -135,6 +129,7 @@ const Layout499Defaults: Layout499Props = {
         </Translation>
       ),
       image: { src: images.gif3.src, alt: images.gif3.alt },
+      optional: true,
     },
     {
       heading: (
@@ -152,6 +147,7 @@ const Layout499Defaults: Layout499Props = {
         </Translation>
       ),
       image: { src: images.gif4.src, alt: images.gif4.alt },
+      optional: true,
     },
   ],
 };

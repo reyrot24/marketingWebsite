@@ -7,6 +7,7 @@ import { Button } from "./ui/button";
 import emailjs from "@emailjs/browser";
 import { useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
+import { images } from "@/constants/images";
 
 interface IFormInput {
   user_name: string;
@@ -19,7 +20,7 @@ export const Contact = () => {
   const [acceptTerms, setAcceptTerms] = useState<boolean | "indeterminate">(
     false
   );
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   const { register, handleSubmit, reset } = useForm<IFormInput>();
 
@@ -127,30 +128,14 @@ export const Contact = () => {
             </div>
           </form>
           <div className="flex flex-col items-center gap-6 md:m-0 m-10">
-            {t("contact.googleforms.description")}
-            {i18n.language === "en" ? (
-              <div>
-                <a
-                  href="https://forms.gle/Y4gRzFpbMkg7v3V99"
-                  className="text-softerBrown hover:text-softBrown"
-                  target="_blank" // Opens in a new tab
-                  rel="noopener noreferrer" // Security best practice
-                >
-                  English Google Form
-                </a>
-              </div>
-            ) : (
-              <div>
-                <a
-                  href="https://forms.gle/7gJ5RyQCmVyhrZxA7"
-                  className="text-softerBrown hover:text-softBrown"
-                  target="_blank" // Opens in a new tab
-                  rel="noopener noreferrer" // Security best practice
-                >
-                  Italian Google Form
-                </a>
-              </div>
-            )}
+            <a
+              aria-label="Chat on WhatsApp"
+              href="https://wa.me/3204016602"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img alt={images.whatsapp.alt} src={images.whatsapp.src} />
+            </a>
           </div>
         </div>
       </div>

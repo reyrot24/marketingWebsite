@@ -26,7 +26,7 @@ export const Header = (props: Header83Props) => {
   const { t } = useTranslation();
 
   return (
-    <section id="home" className="relative h-[500vh]">
+    <section id="home" className="relative h-[300vh]">
       <div className="sticky top-0 h-screen overflow-hidden">
         <motion.div
           className="flex h-full items-center justify-center"
@@ -37,15 +37,8 @@ export const Header = (props: Header83Props) => {
               {heading}
               {description}
               <div className="mt-6 flex items-center justify-center gap-x-4 md:mt-8">
-                <a
-                  href="https://calendly.com/reyrotaru1/webbyreybook"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Button>{t("header.button1")}</Button>
-                </a>
                 <a href="#contact">
-                  <Button variant="secondary">{t("header.button2")}</Button>
+                  <Button>{t("header.button1")}</Button>
                 </a>
               </div>
             </div>

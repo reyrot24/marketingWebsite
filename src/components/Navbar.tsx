@@ -124,11 +124,7 @@ export const Navbar = (props: Navbar14Props) => {
                 </div>
               ))}
               <div className="rt-4 mt-4 flex flex-col items-center gap-4 lg:ml-8 lg:mt-0 lg:flex-row">
-                <a
-                  href="https://calendly.com/reyrotaru1/webbyreybook"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="#contact">
                   <Button>{t("navbar.button")}</Button>
                 </a>
                 <LanguageSelector />
@@ -153,6 +149,10 @@ export const Navbar14Defaults: Navbar14Props = {
         <Translation>{(t) => <h1>{t("navbar.services")}</h1>}</Translation>
       ),
       url: "#services",
+    },
+    {
+      title: <Translation>{(t) => <h1>{t("navbar.pricing")}</h1>}</Translation>,
+      url: "#pricing",
     },
     {
       title: (
