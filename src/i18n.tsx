@@ -187,7 +187,7 @@ i18next
             goldText: "Sono",
             description: {
               first:
-                "Ciao! Sono Andrea, aka Rey, un web programmatore e web developer di 23 anni con una passione per la tecnologia 💻, la scienza 🔬, la musica 🎸, le arti marziali 🥋 e lo sport 🏋🏻‍♂️. Da tutte queste passioni, ho imparato a padroneggiare le cose fondamentali e a superare i miei limiti.",
+                "Ciao! Sono Andrea, aka Rey, un programmatore e web developer di 23 anni con una passione per la tecnologia 💻, la scienza 🔬, la musica 🎸, le arti marziali 🥋 e lo sport 🏋🏻‍♂️. Da tutte queste passioni, ho imparato a padroneggiare le cose fondamentali e a superare i miei limiti.",
               second:
                 "Metto la stessa energia e dedizione al servizio del mio lavoro digitale, aiutando marchi e professionisti a creare una presenza online di impatto.",
               third:
