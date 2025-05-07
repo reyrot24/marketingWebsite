@@ -46,7 +46,10 @@ export const Projects = (props: Layout366Props) => {
         <div className="grid grid-cols-1 gap-6 md:gap-8 ">
           <div className="grid grid-cols-1 gap-6 md:gap-8 lg:grid-cols-2">
             {cardsBig.map((card, index) => (
-              <div
+              <a
+                href={card.link}
+                target="_blank"
+                rel="noopener noreferrer"
                 key={index}
                 className="bg-darkerBrown order-first flex flex-col items-stretch border border-border-primary "
               >
@@ -60,12 +63,10 @@ export const Projects = (props: Layout366Props) => {
                 <div className="flex flex-col justify-between items-center p-6 md:p-12">
                   <div>
                     {card.heading}
-
                     {card.description}
-                    <a href="">{card.link}</a>
                   </div>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>
@@ -95,7 +96,7 @@ export const Layout366Defaults: Layout366Props = {
           )}
         </Translation>
       ),
-      link: "",
+      link: "https://ssdcamathena.it",
       description: (
         <Translation>
           {(t) => <p>{t("projects.projects.project1.description")}</p>}

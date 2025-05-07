@@ -112,38 +112,19 @@ const Layout499Defaults: Layout499Props = {
       ),
       image: { src: images.gif1.src, alt: images.gif1.alt },
     },
-
     {
       heading: (
         <Translation>
           {(t) => (
             <h3 className="text-yellow mb-3 text-2xl font-bold md:mb-4 md:text-3xl md:leading-[1.3] lg:text-4xl">
-              {t("services.sections.section3.title")}
+              {t("services.sections.section2.title")}
             </h3>
           )}
         </Translation>
       ),
       description: (
         <Translation>
-          {(t) => <p>{t("services.sections.section3.description")}</p>}
-        </Translation>
-      ),
-      image: { src: images.gif3.src, alt: images.gif3.alt },
-      optional: true,
-    },
-    {
-      heading: (
-        <Translation>
-          {(t) => (
-            <h3 className="text-yellow mb-3 text-2xl font-bold md:mb-4 md:text-3xl md:leading-[1.3] lg:text-4xl">
-              {t("services.sections.section4.title")}
-            </h3>
-          )}
-        </Translation>
-      ),
-      description: (
-        <Translation>
-          {(t) => <p>{t("services.sections.section4.description")}</p>}
+          {(t) => <p>{t("services.sections.section2.description")}</p>}
         </Translation>
       ),
       image: { src: images.gif4.src, alt: images.gif4.alt },

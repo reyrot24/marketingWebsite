@@ -17,10 +17,9 @@ i18next
             button: "Contact me",
           },
           header: {
-            title:
-              "Building Websites and Social Campaigns That Make a Difference.",
+            title: "Building Websites That Make a Difference.",
             subtitle:
-              "I specialize in crafting websites and social media strategies that not only look good but drive results. Let's take your brand to the next level.",
+              "I specialize in crafting websites and apps that not only look good but drive results. Let's take your brand to the next level.",
             button1: "Contact",
           },
           aboutme: {
@@ -28,11 +27,11 @@ i18next
             goldText: "Rey",
             description: {
               first:
-                "Hi! I'm Andrew, aka Rey — a 23 years old web and social media manager with a passion for technology 💻, science 🔬, music 🎸, martial arts 🥋 and sports 🏋🏻‍♂️. From all this passions, I learned to master the fundamentals and to push boundaries.",
+                "Hi! I'm Andrew, aka Rey — a 23 years old programmer and web developer with a passion for technology 💻, science 🔬, music 🎸, martial arts 🥋 and sports 🏋🏻‍♂️. From all this passions, I learned to master the fundamentals and to push boundaries.",
               second:
                 "I bring the same energy and dedication to my digital work, helping brands and professionals craft an impactful online presence.",
               third:
-                "I specialize in building engaging websites, managing effective social media strategies, and creating compelling content. Whether you're looking to revamp your online identity, increase engagement, or grow your brand, I’m here to turn your ideas into reality with a clear focus on results.",
+                "I specialize in building engaging websites, full-stack web apps and mobile apps. Whether you're looking to revamp your online identity, increase engagement, or grow your brand, I’m here to turn your ideas into reality with a clear focus on results.",
             },
             button: "Contact me",
           },
@@ -48,17 +47,8 @@ i18next
                 description:
                   "I create clean, visually appealing, and responsive websites that not only look good but are optimized for seamless user experience. Every website is custom-built to reflect your brand's identity and crafted with a focus on functionality and engagement.",
               },
+
               section2: {
-                title: "Social Media Content Creation & Management",
-                description:
-                  " I specialize in creating engaging and visually captivating social media content tailored to your audience and goals. From strategic planning to daily management, I ensure your platforms are consistent, impactful, and aligned with your brand identity. Let me help you build authentic connections with your audience and grow your online presence.",
-              },
-              section3: {
-                title: "Digital Marketing & Advertising",
-                description:
-                  "Drive measurable results with strategic digital marketing and advertising campaigns. I craft targeted strategies designed to increase visibility, drive traffic, and convert leads into loyal customers. Using data-driven insights and creative approaches, I help businesses achieve their marketing objectives through platforms like Google Ads, Facebook, Instagram, and more. Elevate your brand with campaigns that deliver ROI.",
-              },
-              section4: {
                 title: "AI Integration & Automation",
                 description:
                   "I offer AI integration services to help automate repetitive tasks and improve efficiency across your digital channels. From chatbots for customer support to content generation tools, I integrate AI-powered solutions that streamline workflows and enhance user experience.",
@@ -68,127 +58,42 @@ i18next
           pricing: {
             title: "Discover My",
             goldText: "Pricing",
-            subtitle:
-              "Choose the perfect plan for your business needs. Whether you need a stunning website, social media, or full-scale digital marketing, I've got you covered!",
+            subtitle: "Choose the perfect plan for your business needs.",
             packages: {
               package1: {
                 title: "Essential Package",
-                price: "€149/mo",
+                price: "€149/mo or €599 one-time fee",
                 features: {
-                  website: {
-                    title: "Website Development",
-                    feature1:
-                      "1-Page Landing Website (Custom Design & Mobile-Optimized)",
-                    feature2: "SEO Setup",
-                    feature3: "Contact Form & Basic Analytics",
-                  },
-                  marketing: {
-                    title: "Marketing",
-                    feature1: "Basic Google My Business Setup",
-                    feature2: "Basic Monthly Performance Report",
-                  },
-                },
-                bonus: {
-                  title: "Bonus:",
-                  feature: "Newsletter Setup (Up to 500 subscribers)",
+                  feature1: "Landing Page",
+                  feature2: "Mobile Responsive",
                 },
                 forWho:
                   "Great for freelancers, small businesses, and startups looking to establish their online presence!",
                 cta: "Get Started",
               },
               package2: {
-                title: "Growth Package",
-                price: "€249/mo",
+                title: "Standard Package",
+                price: "€299/mo or €999 one-time fee",
                 features: {
-                  website: {
-                    title: "Website Development",
-                    feature1: "5-Page Website (Custom Design & SEO-Optimized)",
-                    feature2: "Blog & Content Management System",
-                  },
-                  marketing: {
-                    title: "Marketing",
-                    feature1: "Google My Business Optimization",
-                    feature2: "Google & Facebook Ads Management",
-                    feature3: "Monthly Performance Report",
-                  },
-                  ai: {
-                    title: "AI Automations",
-                    feature1: "Basic AI Automations for Social Media & Emails",
-                  },
-                },
-                bonus: {
-                  title: "Bonus:",
-                  feature: "Newsletter Automation (Up to 1000 subscribers)",
+                  feature1: "Multi-Page Website (Up to 5 pages)",
+                  feature2: "CRM Integration",
                 },
                 forWho:
-                  "Perfect for businesses ready to scale and increase their reach!",
-                cta: "Upgrade Now",
-              },
-              package3: {
-                title: "Ultimate Package",
-                price: "€499/mo",
-                features: {
-                  website: {
-                    title: "Website Development",
-                    feature1: "Custom Full-Stack Solution",
-                    feature2:
-                      "Advanced Website with Backend (E-Commerce, Booking, or Membership)",
-                    feature3: "CRM & Database Integration",
-                  },
-                  marketing: {
-                    title: "Marketing",
-                    feature1:
-                      "Advanced Analytics & Monthly Strategy Consultation",
-                    feature2: "Conversion Rate Optimization for Maximum Sales",
-                  },
-                  ai: {
-                    title: "AI Automations",
-                    feature1: "AI-Powered Marketing Automations",
-                    feature2: "Data-Driven Performance Reports & Consultations",
-                    feature3: "24/7 Website Monitoring & Support",
-                  },
-                },
-                bonus: {
-                  title: "Bonus:",
-                  feature:
-                    "VIP Priority Support + Unlimited Newsletter Automation",
-                },
-                forWho:
-                  "The ultimate package for businesses looking to automate and dominate their industry!",
-                cta: "Get the Ultimate Package",
+                  "Great for small to medium-sized businesses looking to enhance their online presence and customer engagement.",
+                cta: "Get Started",
               },
             },
-            custom: {
-              title: "Custom Services",
-              subtitle: "Need something unique? I also offer:",
-              feature1: "Email Marketing & Automation",
-              feature2: "Branding & Graphic design",
-              feature3: "CRM Setup & Workflow Automation",
+            addon: {
+              title: "Add Ons",
+              subtitle: "You can also add to the package:",
+              feature1: "+1 Page (€50)",
+              feature2: "Admin Dashboard (starting at €299)",
+              feature3: "Google My Business Setup & Ads (€99)",
+              feature4: "Third Party Integrations (starting at €99)",
+              feature5:
+                "AI Learning & Integration with Chatbots, Calls, Emails, etc. (starting at €149)",
             },
-            addOn: {
-              title: "Website Development (One-Time Fee)",
-              price: "Starting at €99",
-              options: {
-                option1: {
-                  title: "Landing Page Website (1 Page)",
-                  subtitle: "Perfect for personal brands & small businesses",
-                  price: "€99",
-                },
-                option2: {
-                  title: "Multi-Page Website (Up to 5 Pages)*",
-                  subtitle: "Ideal for businesses & service providers",
-                  price: "€199",
-                },
-                option3: {
-                  title:
-                    "Full-Stack Website (E-Commerce, Booking, or Membership System)",
-                  subtitle: "Advanced custom development",
-                  price: "€499",
-                },
-              },
-              cta: "Get Your Website",
-              asteric: "+ €50 for any additional page",
-            },
+
             footer: {
               title: "Not sure what you need?",
               subtitle: "Schedule a Free Consultation!",
@@ -272,10 +177,9 @@ i18next
             button: "Contattami",
           },
           header: {
-            title:
-              "Costruire siti web e campagne social che fanno la differenza.",
+            title: "Costruire siti web che fanno la differenza.",
             subtitle:
-              "Sono specializzato nella creazione di siti web e strategie per i social media che non solo hanno un bell'aspetto, ma generano anche risultati. Portiamo il tuo marchio al livello successivo.",
+              "Sono specializzato nella creazione di siti web e app che non solo hanno un bell'aspetto, ma generano anche risultati. Portiamo il tuo marchio al livello successivo.",
             button1: "Contattami",
           },
           aboutme: {
@@ -283,11 +187,11 @@ i18next
             goldText: "Sono",
             description: {
               first:
-                "Ciao! Sono Andrea, aka Rey, un web e social media manager di 23 anni con una passione per la tecnologia 💻, la scienza 🔬, la musica 🎸, le arti marziali 🥋 e lo sport 🏋🏻‍♂️. Da tutte queste passioni, ho imparato a padroneggiare le cose fondamentali e a superare i miei limiti.",
+                "Ciao! Sono Andrea, aka Rey, un web programmatore e web developer di 23 anni con una passione per la tecnologia 💻, la scienza 🔬, la musica 🎸, le arti marziali 🥋 e lo sport 🏋🏻‍♂️. Da tutte queste passioni, ho imparato a padroneggiare le cose fondamentali e a superare i miei limiti.",
               second:
                 "Metto la stessa energia e dedizione al servizio del mio lavoro digitale, aiutando marchi e professionisti a creare una presenza online di impatto.",
               third:
-                "Sono specializzato nella creazione di siti web accattivanti, nella gestione di strategie efficaci sui social media e nella creazione di contenuti avvincenti. Che tu stia cercando di rinnovare la tua identità online, aumentare l'engagement o far crescere il tuo marchio, sono qui per trasformare le tue idee in realtà con un chiaro focus sui risultati.",
+                "Sono specializzato nella creazione di siti web accattivanti, di web app full stack e applicazioni mobile. Che tu stia cercando di rinnovare la tua identità online, aumentare l'engagement o far crescere il tuo marchio, sono qui per trasformare le tue idee in realtà con un chiaro focus sui risultati.",
             },
             button: "Contattami",
           },
@@ -303,17 +207,8 @@ i18next
                 description:
                   "Sono specializzato nella creazione di siti web puliti, visivamente accattivanti e reattivi che non solo hanno un bell'aspetto, ma sono anche ottimizzati per un'esperienza utente fluida. Ogni sito web è personalizzato per riflettere l'identità del tuo marchio e realizzato con un'attenzione alla funzionalità e al coinvolgimento.",
               },
+
               section2: {
-                title: "Creazione & Gestione di Contenuti per i Social Media",
-                description:
-                  "Creo contenuti per i social media coinvolgenti e visivamente accattivanti, su misura per il tuo pubblico e i tuoi obiettivi. Dalla pianificazione strategica alla gestione quotidiana, mi assicuro che le tue piattaforme siano coerenti, di impatto e allineate con l'identità del tuo marchio. Lascia che ti aiuti a creare connessioni autentiche con il tuo pubblico e ad aumentare la tua presenza online.",
-              },
-              section3: {
-                title: "Digital Marketing & Advertising",
-                description:
-                  "Ottieni risultati misurabili con campagne strategiche di marketing digitale e pubblicità. elaboro strategie mirate progettate per aumentare la visibilità, generare traffico e convertire i lead in clienti fedeli. Utilizzando approfondimenti basati sui dati e approcci creativi, aiuto le azienda a raggiungere i loro obiettivi di marketing tramite piattaforme come Google Ads, Facebook, Instagram e altro ancora. Valorizza il tuo marchio con campagne che generano ROI.",
-              },
-              section4: {
                 title: "Integrazione & Automazione con IA",
                 description:
                   "Offro servizi di integrazione con IA per aiutare ad automatizzare le attività ripetitive e migliorare l'efficienza sui tuoi canali digitali. Dai chatbot per l'assistenza clienti agli strumenti di generazione di contenuti, integro soluzioni basate sull'IA che semplificano i flussi di lavoro e migliorano l'esperienza utente.",
@@ -321,137 +216,48 @@ i18next
             },
           },
           pricing: {
-            title: "Scopri i Miei",
+            title: "Scopri i miei",
             goldText: "Prezzi",
             subtitle:
-              "Scegli il piano perfetto per le tue esigenze aziendali. Che tu abbia bisogno di un sito web straordinario, di social media o di marketing digitale, ci penso io! ",
+              "Scegli il piano perfetto per le esigenze della tua azienda.",
             packages: {
               package1: {
                 title: "Pacchetto Essenziale",
-                price: "€149/mese",
+                price: "€149/mese o €599 una tantum",
                 features: {
-                  website: {
-                    title: "Sviluppo del sito web",
-                    feature1:
-                      "1-Pagina Landing (Design Personalizzato & Ottimizzato per Mobile)",
-                    feature2: "Configurazione SEO ",
-                    feature3: "Modulo di Contatto & Analytics di Base",
-                  },
-                  marketing: {
-                    title: "Marketing",
-                    feature1: "Configurazione di base di Google My Business",
-                    feature2: "Rapporto base sulle prestazioni mensili",
-                  },
-                },
-                bonus: {
-                  title: "Bonus:",
-                  feature: "Configurazione Newsletter (Fino a 500 iscritti)",
+                  feature1: "Landing Page",
+                  feature2: "Mobile Responsive",
                 },
                 forWho:
                   "Ideale per liberi professionisti, piccole imprese e startup che desiderano affermare la propria presenza online!",
-                cta: "Inizia adesso",
+                cta: "Inizia ora",
               },
               package2: {
-                title: "Pacchetto Crescita",
-                price: "€249/mese",
+                title: "Pacchetto Standard",
+                price: "€299/mese o €999 una tantum",
                 features: {
-                  website: {
-                    title: "Sviluppo del sito web",
-                    feature1:
-                      "Sito Web con 5 Pagine (Design Personalizzato & Ottimizzato per la SEO)",
-                    feature2: "Blog e Sistema di Gestione dei Contenuti",
-                  },
-                  marketing: {
-                    title: "Marketing",
-                    feature1: "Ottimizzazione di Google My Business",
-                    feature2: "Gestione di Google & Facebook Ads",
-                    feature3: "Rapporto sulle prestazioni mensili",
-                  },
-                  ai: {
-                    title: "Automazioni AI",
-                    feature1: "Automazioni di Base per Social Media & Email",
-                  },
-                },
-                bonus: {
-                  title: "Bonus:",
-                  feature: "Automazione Newsletter (Fino a 1000 iscritti)",
+                  feature1: "Sito Web Multi-Pagina (Fino a 5 pagine)",
+                  feature2: "Integrazione con CRM",
                 },
                 forWho:
-                  "Perfetto per le aziende pronte a crescere e ad aumentare la propria portata!",
-                cta: "Aggiorna ora",
-              },
-              package3: {
-                title: "Pacchetto Ultimate",
-                price: "€499/mese",
-                features: {
-                  website: {
-                    title: "Sviluppo del sito web",
-                    feature1: "Soluzione Full-Stack Personalizzata",
-                    feature2:
-                      "Sito Web Avanzato (E-Commerce, Prenotazione o Abbonamento)",
-                    feature3: "Integrazione con CRM & Database",
-                  },
-                  marketing: {
-                    title: "Marketing",
-                    feature1:
-                      "Analisi Avanzata e Consulenza Strategica Mensile",
-                    feature2:
-                      "Ottimizzazione del Tasso di Conversione per il Massimo delle Vendite",
-                  },
-                  ai: {
-                    title: "Automazioni AI",
-                    feature1:
-                      "Automazioni di Marketing Basate sull'Intelligenza Artificiale",
-                    feature2:
-                      "Report e Consulenze sulle Prestazioni basate sui Dati",
-                    feature3:
-                      "Monitoraggio e Supporto del Sito Web 24 ore su 24, 7 giorni su 7",
-                  },
-                },
-                bonus: {
-                  title: "Bonus:",
-                  feature:
-                    "Supporto Prioritario VIP + Automazione Illimitata delle Newsletter",
-                },
-                forWho:
-                  "Il pacchetto definitivo per le aziende che vogliono automatizzare e dominare il loro settore!",
-                cta: "Ottieni il pacchetto definitivo",
+                  "Ideale per le piccole e medie imprese che desiderano migliorare la propria presenza online e il coinvolgimento dei clienti.",
+                cta: "Inizia ora",
               },
             },
-            custom: {
-              title: "Servizi personalizzati",
-              subtitle: "Hai bisogno di qualcosa di unico? Offro anche:",
-              feature1: "Email marketing e automazione",
-              feature2: "Branding e grafica",
-              feature3: "Configurazione CRM e automazione del flusso di lavoro",
+            addon: {
+              title: "Componenti aggiuntivi",
+              subtitle: "Puoi anche aggiungere al pacchetto:",
+              feature1: "+1 Pagina (€50)",
+              feature2: "Dashboard di amministrazione (a partire da €299)",
+              feature3: "Configurazione e annunci di Google My Business (€99)",
+              feature4: "Integrazioni di terze parti (a partire da €99)",
+              feature5:
+                "Apprendimento e integrazione dell'IA con chatbot, chiamate, email, ecc. (a partire da €149)",
             },
-            addOn: {
-              title: "Sviluppo Sito Web (Una tantum)",
-              price: "A partire da €99",
-              options: {
-                option1: {
-                  title: "Sito Web Landing (1 Pagina)",
-                  subtitle: "Perfetto per marchi personali e piccole imprese",
-                  price: "€99",
-                },
-                option2: {
-                  title: "Sito Web Multi-Pagine (Fino a 5 pagine)*",
-                  subtitle: "Ideale per aziende e fornitori di servizi",
-                  price: "€199",
-                },
-                option3: {
-                  title:
-                    "Sito Web Full-Stack (E-Commerce, Prenotazioni, o Sistema di Abbonamento)",
-                  subtitle: "Sviluppo personale avanzato",
-                  price: "€399",
-                },
-              },
-              cta: "Prendi il tuo Sito Web",
-              asteric: "+ €50 per pagine aggiuntive",
-            },
+
             footer: {
-              title: "Non sei sicuro di quello che ti serve?",
-              subtitle: "Prenota un Consulto Gratuito!",
+              title: "Non sei sicuro di cosa hai bisogno?",
+              subtitle: "Prenota una consulenza gratuita!",
             },
           },
           projects: {
