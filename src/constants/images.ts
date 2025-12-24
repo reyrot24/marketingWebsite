@@ -1,8 +1,10 @@
 import AthenaGym from "../assets/Athena_Gym.png";
-import Gif1 from "../assets/Gif1.gif";
-import Gif2 from "../assets/Gif2.gif";
-import Gif3 from "../assets/Gif3.gif";
-import Gif4 from "../assets/Gif4.gif";
+import WebDev from "../assets/WebDev.gif";
+import Backend from "../assets/Backend.png";
+import AI from "../assets/AI.gif";
+import SeoAnalytics from "../assets/SeoAnalytics.gif";
+import Socials from "../assets/Socials.gif";
+import Maintenence from "../assets/Maintenence.png";
 import Gold from "../assets/Gold.png";
 import Rey1 from "../assets/Rey_Image1.png";
 import Rey2 from "../assets/Rey_Image2.png";
@@ -16,21 +18,31 @@ export const images = {
     src: AthenaGym,
     alt: "Gym",
   },
-  gif1: {
-    src: Gif1,
-    alt: "Gif1",
-  },
-  gif2: {
-    src: Gif2,
-    alt: "Gif2",
-  },
-  gif3: {
-    src: Gif3,
-    alt: "Gif3",
-  },
-  gif4: {
-    src: Gif4,
-    alt: "Gif4",
+  services: {
+    WebDev: {
+      src: WebDev,
+      alt: "WebDev",
+    },
+    Backend: {
+      src: Backend,
+      alt: "Backend",
+    },
+    AI: {
+      src: AI,
+      alt: "AI",
+    },
+    SeoAnalytics: {
+      src: SeoAnalytics,
+      alt: "SeoAnalytics",
+    },
+    Socials: {
+      src: Socials,
+      alt: "Socials",
+    },
+    Maintenence: {
+      src: Maintenence,
+      alt: "Maintenence",
+    },
   },
   gold: {
     src: Gold,

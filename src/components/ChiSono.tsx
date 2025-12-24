@@ -1,6 +1,5 @@
 import clsx from "clsx";
 import { Button } from "./ui/button";
-import { Translation, useTranslation } from "react-i18next";
 import { images } from "@/constants/images";
 
 type Image = {
@@ -13,9 +12,7 @@ type ImageProps = {
 };
 
 type Props = {
-  description1: any;
-  description2: any;
-  description3: any;
+  description: string;
   features: ImageProps[];
 };
 
@@ -23,11 +20,10 @@ export type Header1Props = React.ComponentPropsWithoutRef<"section"> &
   Partial<Props>;
 
 export const ChiSono = (props: Header1Props) => {
-  const { description1, description2, description3, features } = {
+  const { description, features } = {
     ...Header1Defaults,
     ...props,
   } as Props;
-  const { t } = useTranslation();
   return (
     <section
       id="aboutme"
@@ -37,18 +33,11 @@ export const ChiSono = (props: Header1Props) => {
         <div className="grid grid-cols-1 gap-x-20 gap-y-12 md:gap-y-16 lg:grid-cols-2 lg:items-center">
           <div>
             <h1 className="mb-5 text-6xl font-bold md:mb-6 md:text-9xl lg:text-10xl text-brown">
-              {t("aboutme.title")}{" "}
-              <span className="gold-text1 underline decoration-softBrown">
-                {t("aboutme.goldText")}
-              </span>
+              Chi Sono
             </h1>
-            <div className="flex gap-2 flex-col">
-              {description1}
-              {description2}
-              {description3}
-            </div>
+            <div className="flex gap-2 flex-col">{description}</div>
             <div className="mt-6 flex gap-x-4 md:mt-8">
-              <Button>{t("aboutme.button")}</Button>
+              <Button>Contattami</Button>
             </div>
           </div>
           <div className="md:flex md:flex-row gap-x-12  md:gap-x-8  lg:gap-x-12 hidden">
@@ -77,21 +66,8 @@ export const ChiSono = (props: Header1Props) => {
 };
 
 export const Header1Defaults: Header1Props = {
-  description1: (
-    <Translation>
-      {(t) => <p className="md:text-md">{t("aboutme.description.first")}</p>}
-    </Translation>
-  ),
-  description2: (
-    <Translation>
-      {(t) => <p className="md:text-md">{t("aboutme.description.second")}</p>}
-    </Translation>
-  ),
-  description3: (
-    <Translation>
-      {(t) => <p className="md:text-md">{t("aboutme.description.third")}</p>}
-    </Translation>
-  ),
+  description:
+    "Ciao! Sono Andrea, aka Rey, un programmatore e web developer di 23 anni con una passione per la tecnologia 💻, la scienza 🔬, la musica 🎸, le arti marziali 🥋 e lo sport 🏋🏻‍♂️. Da tutte queste passioni, ho imparato a padroneggiare le cose fondamentali e a superare i miei limiti. Metto la stessa energia e dedizione al servizio del mio lavoro digitale, aiutando marchi e professionisti a creare una presenza online di impatto. Sono specializzato nella creazione di siti web accattivanti, di web app full stack e applicazioni mobile. Che tu stia cercando di rinnovare la tua identità online, aumentare l'engagement o far crescere il tuo marchio, sono qui per trasformare le tue idee in realtà con un chiaro focus sui risultati.",
   features: [
     {
       image: {

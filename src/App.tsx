@@ -6,19 +6,23 @@ import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { Navbar } from "./components/Navbar";
 /* import { Testimonials } from "./components/Testimonials"; */
+import Pricing from "./components/Pricing";
 import { Projects } from "./components/Projects";
-import { Pricing } from "./components/Pricing";
+import ProjectOverview from "./components/ProjectOverview";
+import TechStackSection from "./components/TechStackSection";
 
 const App = () => {
   return (
-    <div className="text-white bg-black">
+    <div className="text-white relative bg-black">
       <Navbar />
       <Header />
       <ChiSono />
       <Services />
-      <Pricing />
+      <TechStackSection />
       <Projects />
+      <Pricing />
       <FAQ />
+      <ProjectOverview />
       {/* <Testimonials /> */}
       <Contact />
       <Footer />

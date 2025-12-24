@@ -176,31 +176,3 @@
   );
   border-image-slice: 1;
 }
-
-.gold-text {
-  background-image: linear-gradient(
-    to left,
-    var(--brown),
-    var(--brown),
-    var(--softer-brown)
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-size: 500% auto;
-  animation: textclip1 5s ease-in-out infinite alternate;
-}
-
-.gold-text1 {
-  background-image: linear-gradient(
-    to left,
-    var(--dark-brown),
-    var(--brown),
-    var(--softer-brown)
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-size: 500% auto;
-  animation: textclip1 2s ease-in-out infinite alternate;
-}

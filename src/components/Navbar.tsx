@@ -3,8 +3,6 @@
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { Button } from "./ui/button";
-import LanguageSelector from "./LanguageSelector";
-import { Translation, useTranslation } from "react-i18next";
 import { images } from "@/constants/images";
 
 type ImageProps = {
@@ -36,7 +34,6 @@ export const Navbar = (props: Navbar14Props) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
-  const { t } = useTranslation();
 
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -107,7 +104,7 @@ export const Navbar = (props: Navbar14Props) => {
             initial="close"
             exit="close"
             transition={{ duration: 0.3 }}
-            className="absolute bg-black left-0 right-0 top-0 mx-auto min-w-[200px] justify-self-center px-[5%] text-center lg:static lg:inset-auto lg:mx-0 lg:px-0 lg:text-left lg:[--translate-y:0%]"
+            className="absolute bg-black left-0 right-0 top-0 mx-auto w-full justify-self-center px-[5%] text-center lg:static lg:inset-auto lg:mx-0 lg:px-0 lg:text-left lg:[--translate-y:0%]"
           >
             <div
               ref={menuRef}
@@ -125,9 +122,8 @@ export const Navbar = (props: Navbar14Props) => {
               ))}
               <div className="rt-4 mt-4 flex flex-col items-center gap-4 lg:ml-8 lg:mt-0 lg:flex-row">
                 <a href="#contact">
-                  <Button>{t("navbar.button")}</Button>
+                  <Button>Contattami</Button>
                 </a>
-                <LanguageSelector />
               </div>
             </div>
           </motion.div>
@@ -141,35 +137,29 @@ export const Navbar14Defaults: Navbar14Props = {
   navLinks: [
     { title: "Home", url: "#home" },
     {
-      title: <Translation>{(t) => <h1>{t("navbar.aboutme")}</h1>}</Translation>,
+      title: "Chi sono",
       url: "#aboutme",
     },
     {
-      title: (
-        <Translation>{(t) => <h1>{t("navbar.services")}</h1>}</Translation>
-      ),
+      title: "Servizi",
       url: "#services",
     },
     {
-      title: <Translation>{(t) => <h1>{t("navbar.pricing")}</h1>}</Translation>,
-      url: "#pricing",
+      title: "Progetti",
+      url: "#projects",
     },
     {
-      title: (
-        <Translation>{(t) => <h1>{t("navbar.projects")}</h1>}</Translation>
-      ),
-      url: "#projects",
+      title: "Prezzi",
+      url: "#pricing",
     },
     {
       title: "FAQs",
       url: "#faqs",
     },
-    /* {
-      title: (
-        <Translation>{(t) => <h1>{t("navbar.testimonials")}</h1>}</Translation>
-      ),
-      url: "#testimonials",
-    }, */
+    {
+      title: "Overview",
+      url: "#overview",
+    },
   ],
 };
 

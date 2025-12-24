@@ -1,225 +1,130 @@
-import { Translation, useTranslation } from "react-i18next";
-import { BiCheck } from "react-icons/bi";
-import { Button } from "./ui/button";
+import { CheckIcon } from "@radix-ui/react-icons";
 
-type PricingPlan = {
-  planName: any;
-  monthlyPrice: any;
-  features: any[];
-  forWho: any;
-  cta: any;
-};
-
-type CustomProps = {
-  title: any;
-  subtitle: any;
-  feature1: any;
-  feature2: any;
-  feature3: any;
-  feature4: any;
-  feature5: any;
+type Packages = {
+  title: string;
+  description: string;
+  featureIncludes: string;
+  features: string[];
+  price: string;
 };
 
 type Props = {
-  heading: any;
-  goldText: any;
-  description: any;
-  pricingPlans: PricingPlan[];
-  addon: CustomProps;
+  description: string;
+  packages: Packages[];
 };
 
-export type Pricing18Props = React.ComponentPropsWithoutRef<"section"> &
-  Partial<Props>;
+type PricingProps = React.ComponentPropsWithoutRef<"section"> & Partial<Props>;
 
-export const Pricing = (props: Pricing18Props) => {
-  const { heading, description, pricingPlans, addon } = {
-    ...Pricing18Defaults,
+const Pricing = (props: PricingProps) => {
+  const { description, packages } = {
+    ...PricingDefaults,
     ...props,
-  };
-
-  const { t } = useTranslation();
-
+  } as Props;
   return (
-    <section id="pricing" className="px-[5%] py-16 md:py-24 lg:py-28">
+    <section id="pricing" className="bg-black1 px-[5%] py-16 md:py-24 lg:py-28">
       <div className="container">
-        <div className="mx-auto mb-12 w-full max-w-lg text-center md:mb-18 md:w-auto lg:mb-20">
-          <h1 className="mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl text-softerBrown">
-            {heading}
-            <span className="gold-text1 underline decoration-softBrown">
-              {t("pricing.goldText")}
-            </span>
+        <div className="mx-auto mb-12 w-full max-w-lg text-center md:mb-18 lg:mb-20">
+          <h1 className="mb-5 text-6xl font-bold md:mb-6 md:text-9xl lg:text-10xl text-brown">
+            I miei Prezzi
           </h1>
-          <p className="md:text-md">{description}</p>
+          {description}
         </div>
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
-          {pricingPlans.map((plan, index) => (
+        <div className="grid grid-cols-1 gap-6 md:gap-8 lg:grid-cols-3">
+          {packages.map((el, index) => (
             <div
               key={index}
-              className="flex h-full flex-col justify-between border border-softBrown px-6 py-8 md:p-8 gap-4"
+              className="w-full h-full flex flex-col items-center text-center border border-softerBrown rounded-xl"
             >
-              <div className="h-full">
-                <div className="rb-6 mb-6 text-center md:mb-8">
-                  <h6 className="text-md font-bold md:text-lgs text-softBrown">
-                    {plan.planName}
-                  </h6>
-                  <h1 className="my-2 text-2xl font-bold md:text-3xl lg:text-4xl text-yellow">
-                    {plan.monthlyPrice}
+              <div className="m-4">
+                <h1 className="text-softerBrown italic mb-5 text-md font-bold md:mb-6 md:text-lg md:leading-[1.3] lg:text-2xl">
+                  {el.title}
+                </h1>
+                <div>
+                  <h1 className="mb-5 text-4xl font-extrabold md:mb-6 text-softerBrown">
+                    {el.price}
                   </h1>
                 </div>
-                <div className="mb-8 grid grid-cols-1 gap-4 py-2">
-                  {plan.features.map((feature, index) => (
-                    <div key={index} className="flex flex-row">
-                      <div className="mr-4 flex-none self-start">
-                        <BiCheck className="size-6 text-softerBrown" />
-                      </div>
-                      <div className="flex flex-col">
-                        <p className="font-bold text-xl text-softerBrown mb-2">
-                          {feature}
-                        </p>
-                      </div>
+                <p>{el.description}</p>
+              </div>
+              <div className="mb-8">
+                <h1 className="text-softBrown mb-5 text-md font-bold md:mb-6 md:text-lg md:leading-[1.3] lg:text-xl">
+                  {el.featureIncludes}
+                </h1>
+                <div className="flex flex-col gap-8 mx-2">
+                  {el.features.map((feature) => (
+                    <div className="flex justify-between gap-8 items-center">
+                      <CheckIcon className="w-8 h-8 text-softerBrown" />
+                      <div className="text-center w-full">{feature}</div>
                     </div>
                   ))}
                 </div>
               </div>
-              <div className="italic text-start">{plan.forWho}</div>
-              <div>
-                <a href="#contact">
-                  <Button className="w-full">{plan.cta}</Button>
-                </a>
-              </div>
             </div>
           ))}
-        </div>
-        <div className="mt-8 flex h-full flex-col justify-between border border-softerBrown px-6 py-8 md:p-8 gap-4">
-          <div className="h-full">
-            <div className="rb-6 mb-6 text-center md:mb-8">
-              <h6 className="text-md font-bold md:text-xl text-softBrown">
-                {addon.title}
-              </h6>
-              <h1 className="my-2 text-4xl font-bold md:text-7xl lg:text-8xl text-yellow">
-                {addon.subtitle}
-              </h1>
-            </div>
-            <div className="mb-8 grid grid-cols-1  font-bold text-xl gap-4 py-2">
-              <div className="flex-row flex gap-2">
-                <BiCheck className="size-6 text-softerBrown" />
-                {addon.feature1}
-              </div>
-              <div className="flex-row flex gap-2">
-                <BiCheck className="size-6 text-softerBrown" />
-                {addon.feature2}
-              </div>
-              <div className="flex items-center gap-2">
-                <BiCheck className="size-6 text-softerBrown" />
-                {addon.feature3}
-              </div>
-              <div className="flex-row flex gap-2">
-                <BiCheck className="size-6 text-softerBrown" />
-                {addon.feature4}
-              </div>
-              <div className="flex-row flex gap-2">
-                <BiCheck className="size-6 text-softerBrown" />
-                {addon.feature5}
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
   );
 };
 
-const Pricing18Defaults: Props = {
-  heading: <Translation>{(t) => <h1>{t("pricing.title")}</h1>}</Translation>,
-  goldText: (
-    <Translation>{(t) => <h1>{t("pricing.goldText")}</h1>}</Translation>
-  ),
-  description: (
-    <Translation>{(t) => <h1>{t("pricing.subtitle")}</h1>}</Translation>
-  ),
-  pricingPlans: [
+export default Pricing;
+
+const PricingDefaults: Props = {
+  description: "Scegli il pacchetto che si adatta meglio al tuo progetto:",
+  packages: [
     {
-      planName: (
-        <Translation>
-          {(t) => <h1>{t("pricing.packages.package1.title")}</h1>}
-        </Translation>
-      ),
-      monthlyPrice: (
-        <Translation>
-          {(t) => <h1>{t("pricing.packages.package1.price")}</h1>}
-        </Translation>
-      ),
+      title: "Pacchetto Starter",
+      description:
+        "Perfetto per i freelancer, i personal brands o chiunque stia iniziando.",
+      featureIncludes: "Include:",
       features: [
-        <Translation>
-          {(t) => <h1>{t("pricing.packages.package1.features.feature1")}</h1>}
-        </Translation>,
-        <Translation>
-          {(t) => <h1>{t("pricing.packages.package1.features.feature2")}</h1>}
-        </Translation>,
+        "1-3 pagine (Home, Chi siamo, Contatti)",
+        "Design responsive ottimizzato per dispositivi mobili",
+        "Design personalizzato (Figma o Tailwind)",
+        "Ottimizzazione SEO di base (meta tag, velocità di pagina)",
+        "Modulo di contatto con notifiche email",
+        "Link ai social media",
+        "Hosting e distribuzione semplici (Vercel)",
+        "Ottimizzazione delle prestazioni di base",
       ],
-      forWho: (
-        <Translation>
-          {(t) => <h1>{t("pricing.packages.package1.forWho")}</h1>}
-        </Translation>
-      ),
-      cta: (
-        <Translation>
-          {(t) => <h1>{t("pricing.packages.package1.cta")}</h1>}
-        </Translation>
-      ),
+      price: "€250 - €350",
     },
     {
-      planName: (
-        <Translation>
-          {(t) => <h1>{t("pricing.packages.package2.title")}</h1>}
-        </Translation>
-      ),
-      monthlyPrice: (
-        <Translation>
-          {(t) => <h1>{t("pricing.packages.package2.price")}</h1>}
-        </Translation>
-      ),
+      title: "Pacchetto Business",
+      description:
+        "Per professionisti o aziende che necessitano di risultati concreti, automazione e strumenti.",
+      featureIncludes: "Include tutto in Starter, più:",
       features: [
-        <Translation>
-          {(t) => <h1>{t("pricing.packages.package2.features.feature1")}</h1>}
-        </Translation>,
-        <Translation>
-          {(t) => <h1>{t("pricing.packages.package2.features.feature2")}</h1>}
-        </Translation>,
+        "Fino a 7 pagine (Home, Servizi, Blog, Contatti, Portfolio...)",
+        "CMS personalizzato (tramite Supabase, Sanity o Notion)",
+        "Impostazione del blog con struttura SEO-friendly",
+        "Integrazione con modulo di prenotazione o calendario (Calendly, TidyCal)",
+        "Integrazione con i social media (incorporamento di post su Instagram, TikTok, ecc.)",
+        "Integrazione con Google Analytics",
+        "Sitemap + SEO + indicizzazione su Google",
+        "Video di formazione tecnica / guida in PDF per l'utilizzo del CMS",
+        "Automazioni con AI",
       ],
-      forWho: (
-        <Translation>
-          {(t) => <h1>{t("pricing.packages.package2.forWho")}</h1>}
-        </Translation>
-      ),
-      cta: (
-        <Translation>
-          {(t) => <h1>{t("pricing.packages.package2.cta")}</h1>}
-        </Translation>
-      ),
+      price: "€500 - €1200",
+    },
+    {
+      title: "Pacchetto Avanzato",
+      description:
+        "Progettato per le aziende che desiderano prestazioni, analisi e automazione.",
+      featureIncludes: "Includes everything from Growth, plus:",
+      features: [
+        "Integrazione con chatbot AI (bot FAQ o bot di contatto tramite Bolt.ai, Voiceflow o il tuo backend)",
+        "Database Supabase avanzato (per la gestione di servizi, prenotazioni, prodotti)",
+        "Dashboard di amministrazione (interfaccia CRUD per la gestione dei dati)",
+        "Automazione delle email (benvenuto, conferma della prenotazione, iscrizione alla newsletter)",
+        "Configurazione API (ad esempio, per connettersi a strumenti esterni, moduli, Stripe, ecc.)",
+        "Funzionalità backend personalizzate (ad esempio, dashboard di analisi, post di blog privati)",
+        "Supporto multilingue",
+        "Integrazione opzionale con Stripe o PayPal",
+        "30 giorni di supporto tecnico (correzioni, domande, assistenza all'utilizzo)",
+        "Automazioni più avanzate con AI",
+      ],
+      price: "€1500 - €2500",
     },
   ],
-  addon: {
-    title: (
-      <Translation>{(t) => <h1>{t("pricing.addon.title")}</h1>}</Translation>
-    ),
-    subtitle: (
-      <Translation>{(t) => <h1>{t("pricing.addon.subtitle")}</h1>}</Translation>
-    ),
-    feature1: (
-      <Translation>{(t) => <h1>{t("pricing.addon.feature1")}</h1>}</Translation>
-    ),
-    feature2: (
-      <Translation>{(t) => <h1>{t("pricing.addon.feature2")}</h1>}</Translation>
-    ),
-    feature3: (
-      <Translation>{(t) => <h1>{t("pricing.addon.feature3")}</h1>}</Translation>
-    ),
-    feature4: (
-      <Translation>{(t) => <h1>{t("pricing.addon.feature4")}</h1>}</Translation>
-    ),
-    feature5: (
-      <Translation>{(t) => <h1>{t("pricing.addon.feature5")}</h1>}</Translation>
-    ),
-  },
 };

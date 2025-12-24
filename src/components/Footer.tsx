@@ -1,7 +1,5 @@
 import { FaXTwitter } from "react-icons/fa6";
 import { BiLogoInstagram, BiLogoLinkedinSquare } from "react-icons/bi";
-import { useEffect } from "react";
-import { Translation } from "react-i18next";
 import { images } from "@/constants/images";
 
 type ImageProps = {
@@ -46,60 +44,6 @@ export const Footer = (props: Footer4Props) => {
     ...props,
   } as Props;
 
-  const PrivacyPolicy = () => {
-    useEffect(() => {
-      // Load the Iubenda script when the component mounts
-      const script = document.createElement("script");
-      script.src = "https://cdn.iubenda.com/iubenda.js";
-      script.async = true;
-      document.body.appendChild(script);
-
-      // Cleanup the script when the component unmounts
-      return () => {
-        document.body.removeChild(script);
-      };
-    }, []);
-
-    return (
-      <a
-        href="https://www.iubenda.com/privacy-policy/56148233"
-        className="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe"
-        title="Privacy Policy"
-        target="_blank" // Opens in a new tab
-        rel="noopener noreferrer" // Security best practice
-      >
-        Privacy Policy
-      </a>
-    );
-  };
-
-  const CookiePolicy = () => {
-    useEffect(() => {
-      // Load the Iubenda script when the component mounts
-      const script = document.createElement("script");
-      script.src = "https://cdn.iubenda.com/iubenda.js";
-      script.async = true;
-      document.body.appendChild(script);
-
-      // Cleanup the script when the component unmounts
-      return () => {
-        document.body.removeChild(script);
-      };
-    }, []);
-
-    return (
-      <a
-        href="https://www.iubenda.com/privacy-policy/56148233/cookie-policy"
-        className="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe"
-        title="Cookie Policy"
-        target="_blank" // Opens in a new tab
-        rel="noopener noreferrer" // Security best practice
-      >
-        Cookie Policy
-      </a>
-    );
-  };
-
   return (
     <footer className="px-[5%] py-12 md:py-18 lg:py-20 from-black to to-darkerBrown bg-gradient-to-r border-t-[1px] border-softerBrown">
       <div className="container">
@@ -136,10 +80,6 @@ export const Footer = (props: Footer4Props) => {
         <div className="h-px w-full bg-black" />
         <div className="flex flex-col-reverse items-center justify-center justify-items-center pb-4 pt-6 text-sm md:flex-row md:gap-x-6 md:pb-0 md:pt-8">
           <p className="mt-8 md:mt-0">{footerText}</p>
-          <ul className="grid grid-flow-row grid-cols-[max-content] items-center justify-center justify-items-center gap-x-0 gap-y-4 text-sm md:grid-flow-col md:gap-x-6 md:gap-y-0">
-            <PrivacyPolicy />
-            <CookiePolicy />
-          </ul>
         </div>
       </div>
     </footer>
@@ -157,38 +97,29 @@ export const Footer4Defaults: Footer4Props = {
       links: [
         { title: "Home", url: "#home" },
         {
-          title: (
-            <Translation>{(t) => <p>{t("footer.aboutme")}</p>}</Translation>
-          ),
+          title: "Chi sono",
           url: "#aboutme",
         },
         {
-          title: (
-            <Translation>{(t) => <p>{t("footer.services")}</p>}</Translation>
-          ),
+          title: "Servizi",
           url: "#services",
         },
         {
-          title: (
-            <Translation>{(t) => <p>{t("footer.pricing")}</p>}</Translation>
-          ),
+          title: "Progetti",
+          url: "#projects",
+        },
+        {
+          title: "Prezzi",
           url: "#pricing",
         },
         {
-          title: (
-            <Translation>{(t) => <p>{t("footer.projects")}</p>}</Translation>
-          ),
-          url: "#projects",
+          title: "FAQs",
+          url: "#faqs",
         },
-        { title: "FAQs", url: "#faqs" },
-        /* {
-          title: (
-            <Translation>
-              {(t) => <h1>{t("footer.testimonials")}</h1>}
-            </Translation>
-          ),
-          url: "#testimonials",
-        }, */
+        {
+          title: "Overview",
+          url: "#overview",
+        },
       ],
     },
   ],
@@ -206,7 +137,5 @@ export const Footer4Defaults: Footer4Props = {
       icon: <BiLogoLinkedinSquare className="size-6 hover:text-blue-300" />,
     },
   ],
-  footerText: (
-    <Translation>{(t) => <h1>{t("footer.copyright")}</h1>}</Translation>
-  ),
+  footerText: "© 2025 Vasile Andrei Rotaru. Tutti i diritti sono riservati.",
 };

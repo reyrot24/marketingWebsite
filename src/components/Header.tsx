@@ -2,12 +2,11 @@
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Button } from "./ui/button";
-import { Translation, useTranslation } from "react-i18next";
 import { images } from "@/constants/images";
 
 type Props = {
-  heading: any;
-  description: any;
+  heading: string;
+  description: string;
 };
 
 export type Header83Props = React.ComponentPropsWithoutRef<"section"> &
@@ -23,7 +22,6 @@ export const Header = (props: Header83Props) => {
   const opacityContent = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
   const opacityOverlay = useTransform(scrollYProgress, [0, 1.2], [1, 0]); // Extended beyond 1
   const scale = useTransform(scrollYProgress, [0, 1], [2, 0]);
-  const { t } = useTranslation();
 
   return (
     <section id="home" className="relative h-[300vh]">
@@ -34,11 +32,13 @@ export const Header = (props: Header83Props) => {
         >
           <div className="px-[5%] py-16 md:py-24 lg:py-28">
             <div className="mx-auto max-w-lg text-center">
-              {heading}
+              <h1 className="mb-5 text-6xl font-bold md:mb-6 md:text-9xl lg:text-10xl text-brown">
+                {heading}
+              </h1>
               {description}
               <div className="mt-6 flex items-center justify-center gap-x-4 md:mt-8">
                 <a href="#contact">
-                  <Button>{t("header.button1")}</Button>
+                  <Button>Contattami</Button>
                 </a>
               </div>
             </div>
@@ -71,22 +71,7 @@ export const Header = (props: Header83Props) => {
 };
 
 export const Header83Defaults: Header83Props = {
-  heading: (
-    <Translation>
-      {(t) => (
-        <h1 className="mb-5 text-6xl font-bold gold-text md:mb-6 md:text-9xl lg:text-10xl">
-          {t("header.title")}
-        </h1>
-      )}
-    </Translation>
-  ),
-  description: (
-    <Translation>
-      {(t) => (
-        <p className="text-text-alternative md:text-md">
-          {t("header.subtitle")}
-        </p>
-      )}
-    </Translation>
-  ),
+  heading: "Costruire siti web che fanno la differenza.",
+  description:
+    "Sono specializzato nella creazione di siti web e app che non solo hanno un bell'aspetto, ma generano anche risultati. Portiamo il tuo marchio al livello successivo.",
 };
